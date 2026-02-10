@@ -80,8 +80,10 @@ subject to feasibility and risk constraints
 ---
 
 ## Algorithm
-The algorithm uses a form of approximation of the Orienteering Problem. This algorithm is ran every few seconds with updated
-variables as a result, performance-optimized approximation algorithm is needed. More details in algorithm.tex.
+The approximation algorithm for the Orienteering Problemdescribed in (Chao et al. 1995) is implemented 
+and ran for every extraction point where time left before extraction closes is and highest value path among
+paths returned by each instance of the algorithm is return. This algorithm is ran every few seconds with updated
+variables and as a result, performance-optimized approximation algorithm is needed.
 
 ---
 

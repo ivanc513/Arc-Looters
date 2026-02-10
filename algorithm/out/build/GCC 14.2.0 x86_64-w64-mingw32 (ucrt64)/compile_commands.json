@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\algorithm.dir\\core\\main.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\core\\main.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/core/main.cpp",
+  "output": "CMakeFiles/algorithm.dir/core/main.cpp.obj"
+}
+]
