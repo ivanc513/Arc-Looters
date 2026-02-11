@@ -71,29 +71,31 @@ include CMakeFiles/algorithm.dir/flags.make
 CMakeFiles/algorithm.dir/codegen:
 .PHONY : CMakeFiles/algorithm.dir/codegen
 
-CMakeFiles/algorithm.dir/core/main.cpp.obj: CMakeFiles/algorithm.dir/flags.make
-CMakeFiles/algorithm.dir/core/main.cpp.obj: C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/core/main.cpp
-CMakeFiles/algorithm.dir/core/main.cpp.obj: CMakeFiles/algorithm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/core/main.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/core/main.cpp.obj -MF CMakeFiles\algorithm.dir\core\main.cpp.obj.d -o CMakeFiles\algorithm.dir\core\main.cpp.obj -c C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\core\main.cpp
+CMakeFiles/algorithm.dir/main.cpp.obj: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/main.cpp.obj: CMakeFiles/algorithm.dir/includes_CXX.rsp
+CMakeFiles/algorithm.dir/main.cpp.obj: C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/main.cpp
+CMakeFiles/algorithm.dir/main.cpp.obj: CMakeFiles/algorithm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/main.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/main.cpp.obj -MF CMakeFiles\algorithm.dir\main.cpp.obj.d -o CMakeFiles\algorithm.dir\main.cpp.obj -c C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\main.cpp
 
-CMakeFiles/algorithm.dir/core/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/core/main.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\core\main.cpp > CMakeFiles\algorithm.dir\core\main.cpp.i
+CMakeFiles/algorithm.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/main.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\main.cpp > CMakeFiles\algorithm.dir\main.cpp.i
 
-CMakeFiles/algorithm.dir/core/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/core/main.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\core\main.cpp -o CMakeFiles\algorithm.dir\core\main.cpp.s
+CMakeFiles/algorithm.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/main.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\main.cpp -o CMakeFiles\algorithm.dir\main.cpp.s
 
 # Object files for target algorithm
 algorithm_OBJECTS = \
-"CMakeFiles/algorithm.dir/core/main.cpp.obj"
+"CMakeFiles/algorithm.dir/main.cpp.obj"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
 
-algorithm.exe: CMakeFiles/algorithm.dir/core/main.cpp.obj
+algorithm.exe: CMakeFiles/algorithm.dir/main.cpp.obj
 algorithm.exe: CMakeFiles/algorithm.dir/build.make
+algorithm.exe: libalgorithm_lib.a
 algorithm.exe: CMakeFiles/algorithm.dir/linkLibs.rsp
 algorithm.exe: CMakeFiles/algorithm.dir/objects1.rsp
 algorithm.exe: CMakeFiles/algorithm.dir/link.txt

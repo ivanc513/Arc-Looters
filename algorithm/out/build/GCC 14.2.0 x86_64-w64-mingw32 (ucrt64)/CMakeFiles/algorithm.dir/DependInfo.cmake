@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/core/main.cpp" "CMakeFiles/algorithm.dir/core/main.cpp.obj" "gcc" "CMakeFiles/algorithm.dir/core/main.cpp.obj.d"
+  "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/main.cpp" "CMakeFiles/algorithm.dir/main.cpp.obj" "gcc" "CMakeFiles/algorithm.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

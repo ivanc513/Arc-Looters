@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algorithm.dir/core/main.cpp.obj"
-  "CMakeFiles/algorithm.dir/core/main.cpp.obj.d"
+  "CMakeFiles/algorithm.dir/main.cpp.obj"
+  "CMakeFiles/algorithm.dir/main.cpp.obj.d"
   "algorithm.exe"
   "algorithm.exe.manifest"
   "algorithm.pdb"

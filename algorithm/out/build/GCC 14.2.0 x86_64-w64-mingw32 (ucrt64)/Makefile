@@ -84,6 +84,16 @@ package_source:
 package_source/fast: package_source
 .PHONY : package_source/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -103,6 +113,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -136,6 +191,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named algorithm_lib
+
+# Build rule for target.
+algorithm_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 algorithm_lib
+.PHONY : algorithm_lib
+
+# fast build rule for target.
+algorithm_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/build
+.PHONY : algorithm_lib/fast
+
+#=============================================================================
 # Target rules for targets named algorithm
 
 # Build rule for target.
@@ -148,29 +216,190 @@ algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-core/main.obj: core/main.cpp.obj
-.PHONY : core/main.obj
+#=============================================================================
+# Target rules for targets named test_all
+
+# Build rule for target.
+test_all: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_all
+.PHONY : test_all
+
+# fast build rule for target.
+test_all/fast:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\test_all.dir\build.make tests/CMakeFiles/test_all.dir/build
+.PHONY : test_all/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
 
 # target to build an object file
-core/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/core/main.cpp.obj
-.PHONY : core/main.cpp.obj
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-core/main.i: core/main.cpp.i
-.PHONY : core/main.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-core/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/core/main.cpp.i
-.PHONY : core/main.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-core/main.s: core/main.cpp.s
-.PHONY : core/main.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-core/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/core/main.cpp.s
-.PHONY : core/main.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/core/Graph.obj: src/core/Graph.cpp.obj
+.PHONY : src/core/Graph.obj
+
+# target to build an object file
+src/core/Graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj
+.PHONY : src/core/Graph.cpp.obj
+
+src/core/Graph.i: src/core/Graph.cpp.i
+.PHONY : src/core/Graph.i
+
+# target to preprocess a source file
+src/core/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.i
+.PHONY : src/core/Graph.cpp.i
+
+src/core/Graph.s: src/core/Graph.cpp.s
+.PHONY : src/core/Graph.s
+
+# target to generate assembly for a file
+src/core/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.s
+.PHONY : src/core/Graph.cpp.s
+
+src/core/PathSolver.obj: src/core/PathSolver.cpp.obj
+.PHONY : src/core/PathSolver.obj
+
+# target to build an object file
+src/core/PathSolver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj
+.PHONY : src/core/PathSolver.cpp.obj
+
+src/core/PathSolver.i: src/core/PathSolver.cpp.i
+.PHONY : src/core/PathSolver.i
+
+# target to preprocess a source file
+src/core/PathSolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.i
+.PHONY : src/core/PathSolver.cpp.i
+
+src/core/PathSolver.s: src/core/PathSolver.cpp.s
+.PHONY : src/core/PathSolver.s
+
+# target to generate assembly for a file
+src/core/PathSolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.s
+.PHONY : src/core/PathSolver.cpp.s
+
+src/core/Point.obj: src/core/Point.cpp.obj
+.PHONY : src/core/Point.obj
+
+# target to build an object file
+src/core/Point.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj
+.PHONY : src/core/Point.cpp.obj
+
+src/core/Point.i: src/core/Point.cpp.i
+.PHONY : src/core/Point.i
+
+# target to preprocess a source file
+src/core/Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.i
+.PHONY : src/core/Point.cpp.i
+
+src/core/Point.s: src/core/Point.cpp.s
+.PHONY : src/core/Point.s
+
+# target to generate assembly for a file
+src/core/Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.s
+.PHONY : src/core/Point.cpp.s
+
+src/core/steps/EllipseInit.obj: src/core/steps/EllipseInit.cpp.obj
+.PHONY : src/core/steps/EllipseInit.obj
+
+# target to build an object file
+src/core/steps/EllipseInit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj
+.PHONY : src/core/steps/EllipseInit.cpp.obj
+
+src/core/steps/EllipseInit.i: src/core/steps/EllipseInit.cpp.i
+.PHONY : src/core/steps/EllipseInit.i
+
+# target to preprocess a source file
+src/core/steps/EllipseInit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.i
+.PHONY : src/core/steps/EllipseInit.cpp.i
+
+src/core/steps/EllipseInit.s: src/core/steps/EllipseInit.cpp.s
+.PHONY : src/core/steps/EllipseInit.s
+
+# target to generate assembly for a file
+src/core/steps/EllipseInit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.s
+.PHONY : src/core/steps/EllipseInit.cpp.s
 
 # Help Target
 help:
@@ -179,13 +408,36 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... package
 	@echo ... package_source
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... algorithm
-	@echo ... core/main.obj
-	@echo ... core/main.i
-	@echo ... core/main.s
+	@echo ... algorithm_lib
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... test_all
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... src/core/Graph.obj
+	@echo ... src/core/Graph.i
+	@echo ... src/core/Graph.s
+	@echo ... src/core/PathSolver.obj
+	@echo ... src/core/PathSolver.i
+	@echo ... src/core/PathSolver.s
+	@echo ... src/core/Point.obj
+	@echo ... src/core/Point.i
+	@echo ... src/core/Point.s
+	@echo ... src/core/steps/EllipseInit.obj
+	@echo ... src/core/steps/EllipseInit.i
+	@echo ... src/core/steps/EllipseInit.s
 .PHONY : help
 
 

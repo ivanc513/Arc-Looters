@@ -1,8 +1,68 @@
 [
 {
   "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\algorithm.dir\\core\\main.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\core\\main.cpp",
-  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/core/main.cpp",
-  "output": "CMakeFiles/algorithm.dir/core/main.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm_lib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm_lib.dir\\src\\core\\Graph.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\src\\core\\Graph.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Graph.cpp",
+  "output": "CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm_lib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm_lib.dir\\src\\core\\PathSolver.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\src\\core\\PathSolver.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/PathSolver.cpp",
+  "output": "CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm_lib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm_lib.dir\\src\\core\\Point.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\src\\core\\Point.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Point.cpp",
+  "output": "CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm_lib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm_lib.dir\\src\\core\\steps\\EllipseInit.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\src\\core\\steps\\EllipseInit.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/steps/EllipseInit.cpp",
+  "output": "CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm.dir\\main.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\main.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/main.cpp",
+  "output": "CMakeFiles/algorithm.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/tests",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_all.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_all.dir\\test_point.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\tests\\test_point.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/tests/test_point.cpp",
+  "output": "tests/CMakeFiles/test_all.dir/test_point.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/tests",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_all.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_all.dir\\test_ellipse.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\tests\\test_ellipse.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/tests/test_ellipse.cpp",
+  "output": "tests/CMakeFiles/test_all.dir/test_ellipse.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-build/googlemock",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\out\\build\\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc\"",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-build/googlemock",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\out\\build\\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\\_deps\\googletest-src\\googlemock\\src\\gmock_main.cc\"",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-build/googletest",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\out\\build\\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\\_deps\\googletest-src\\googletest\\src\\gtest-all.cc\"",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-build/googletest",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\out\\build\\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc\"",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 }
 ]
