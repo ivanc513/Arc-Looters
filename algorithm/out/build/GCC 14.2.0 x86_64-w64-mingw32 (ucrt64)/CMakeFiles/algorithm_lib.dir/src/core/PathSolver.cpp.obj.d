@@ -64,6 +64,12 @@ CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/tuple \
  C:/msys64/ucrt64/include/c++/14.2.0/utility \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_relops.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/list \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_list.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/allocated_ptr.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/ext/aligned_buffer.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/list.tcc \
  C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/include/Graph.h \
  C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/include/Point.h \
- C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/include/steps/EllipseInit.h
+ C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/include/steps/EllipseInit.h \
+ C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/include/steps/PathInit.h

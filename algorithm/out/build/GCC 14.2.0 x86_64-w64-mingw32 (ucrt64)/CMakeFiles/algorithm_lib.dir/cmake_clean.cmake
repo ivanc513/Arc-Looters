@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj"
   "CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj.d"
+  "CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj"
+  "CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj.d"
   "CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj"
   "CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj.d"
   "CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj"

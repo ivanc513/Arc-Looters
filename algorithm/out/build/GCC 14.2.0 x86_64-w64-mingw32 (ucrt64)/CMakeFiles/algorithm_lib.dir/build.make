@@ -116,11 +116,26 @@ CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\src\core\Point.cpp -o CMakeFiles\algorithm_lib.dir\src\core\Point.cpp.s
 
+CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj: CMakeFiles/algorithm_lib.dir/flags.make
+CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj: CMakeFiles/algorithm_lib.dir/includes_CXX.rsp
+CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj: C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Path.cpp
+CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj: CMakeFiles/algorithm_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj -MF CMakeFiles\algorithm_lib.dir\src\core\Path.cpp.obj.d -o CMakeFiles\algorithm_lib.dir\src\core\Path.cpp.obj -c C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\src\core\Path.cpp
+
+CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\src\core\Path.cpp > CMakeFiles\algorithm_lib.dir\src\core\Path.cpp.i
+
+CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\src\core\Path.cpp -o CMakeFiles\algorithm_lib.dir\src\core\Path.cpp.s
+
 CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj: CMakeFiles/algorithm_lib.dir/flags.make
 CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj: CMakeFiles/algorithm_lib.dir/includes_CXX.rsp
 CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj: C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/steps/EllipseInit.cpp
 CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj: CMakeFiles/algorithm_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj -MF CMakeFiles\algorithm_lib.dir\src\core\steps\EllipseInit.cpp.obj.d -o CMakeFiles\algorithm_lib.dir\src\core\steps\EllipseInit.cpp.obj -c C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\src\core\steps\EllipseInit.cpp
 
 CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.i: cmake_force
@@ -136,6 +151,7 @@ algorithm_lib_OBJECTS = \
 "CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj" \
 "CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj" \
 "CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj" \
+"CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj" \
 "CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj"
 
 # External object files for target algorithm_lib
@@ -144,10 +160,11 @@ algorithm_lib_EXTERNAL_OBJECTS =
 libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj
 libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj
 libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj
+libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj
 libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj
 libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/build.make
 libalgorithm_lib.a: CMakeFiles/algorithm_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libalgorithm_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Ivan\Arc_Looters_Project\Arc-Looters\algorithm\out\build\GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libalgorithm_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\algorithm_lib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algorithm_lib.dir\link.txt --verbose=$(VERBOSE)
 

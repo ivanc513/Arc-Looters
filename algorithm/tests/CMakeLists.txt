@@ -20,6 +20,7 @@ FetchContent_MakeAvailable(googletest)
 add_executable(test_all
     test_point.cpp
     test_ellipse.cpp
+    test_path.cpp
 )
 
 # Link with your library and GoogleTest

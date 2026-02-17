@@ -4,11 +4,6 @@
 #include "Point.h"
 #include "steps/EllipseInit.h"
 
-// Simple graph constructor for testing
-Graph create_test_graph(const std::vector<Point>& points) {
-    return Graph(points);
-}
-
 TEST(EllipseTest, InsideEllipseWorks) {
     Point start{0, 0};
     Point end{10, 0};
@@ -25,7 +20,8 @@ TEST(EllipseTest, EllipseInitRemovesEdges) {
     Point start = {0, 0};
     Point end = {10, 0};
     std::vector<Point> plane = {start, {5,0}, {15, 0}, end};
-    Graph graph = create_test_graph(plane);
+    std::vector<int> values = {1, 1, 1, 1};
+    Graph graph(plane, values);
 
     double Tmax = euclidean_distance(start, end);
     Graph new_graph = Solver::ellipse_init(graph, plane, Tmax);

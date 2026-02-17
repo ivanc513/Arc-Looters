@@ -8,6 +8,7 @@ set(LIB_SOURCES
     src/core/Graph.cpp
     src/core/PathSolver.cpp 
     src/core/Point.cpp
+    src/core/Path.cpp
     src/core/steps/EllipseInit.cpp
 )
 

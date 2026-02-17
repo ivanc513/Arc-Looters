@@ -228,6 +228,30 @@ test_ellipse.cpp.s:
 	cd /d C:\Users\Ivan\ARC_LO~1\ARC-LO~1\ALGORI~1\out\build\GCC142~1.0X8 && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\test_all.dir\build.make tests/CMakeFiles/test_all.dir/test_ellipse.cpp.s
 .PHONY : test_ellipse.cpp.s
 
+test_path.obj: test_path.cpp.obj
+.PHONY : test_path.obj
+
+# target to build an object file
+test_path.cpp.obj:
+	cd /d C:\Users\Ivan\ARC_LO~1\ARC-LO~1\ALGORI~1\out\build\GCC142~1.0X8 && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\test_all.dir\build.make tests/CMakeFiles/test_all.dir/test_path.cpp.obj
+.PHONY : test_path.cpp.obj
+
+test_path.i: test_path.cpp.i
+.PHONY : test_path.i
+
+# target to preprocess a source file
+test_path.cpp.i:
+	cd /d C:\Users\Ivan\ARC_LO~1\ARC-LO~1\ALGORI~1\out\build\GCC142~1.0X8 && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\test_all.dir\build.make tests/CMakeFiles/test_all.dir/test_path.cpp.i
+.PHONY : test_path.cpp.i
+
+test_path.s: test_path.cpp.s
+.PHONY : test_path.s
+
+# target to generate assembly for a file
+test_path.cpp.s:
+	cd /d C:\Users\Ivan\ARC_LO~1\ARC-LO~1\ALGORI~1\out\build\GCC142~1.0X8 && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\test_all.dir\build.make tests/CMakeFiles/test_all.dir/test_path.cpp.s
+.PHONY : test_path.cpp.s
+
 test_point.obj: test_point.cpp.obj
 .PHONY : test_point.obj
 
@@ -271,6 +295,9 @@ help:
 	@echo ... test_ellipse.obj
 	@echo ... test_ellipse.i
 	@echo ... test_ellipse.s
+	@echo ... test_path.obj
+	@echo ... test_path.i
+	@echo ... test_path.s
 	@echo ... test_point.obj
 	@echo ... test_point.i
 	@echo ... test_point.s

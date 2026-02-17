@@ -329,6 +329,30 @@ src/core/Graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.s
 .PHONY : src/core/Graph.cpp.s
 
+src/core/Path.obj: src/core/Path.cpp.obj
+.PHONY : src/core/Path.obj
+
+# target to build an object file
+src/core/Path.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj
+.PHONY : src/core/Path.cpp.obj
+
+src/core/Path.i: src/core/Path.cpp.i
+.PHONY : src/core/Path.i
+
+# target to preprocess a source file
+src/core/Path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.i
+.PHONY : src/core/Path.cpp.i
+
+src/core/Path.s: src/core/Path.cpp.s
+.PHONY : src/core/Path.s
+
+# target to generate assembly for a file
+src/core/Path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm_lib.dir\build.make CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.s
+.PHONY : src/core/Path.cpp.s
+
 src/core/PathSolver.obj: src/core/PathSolver.cpp.obj
 .PHONY : src/core/PathSolver.obj
 
@@ -429,6 +453,9 @@ help:
 	@echo ... src/core/Graph.obj
 	@echo ... src/core/Graph.i
 	@echo ... src/core/Graph.s
+	@echo ... src/core/Path.obj
+	@echo ... src/core/Path.i
+	@echo ... src/core/Path.s
 	@echo ... src/core/PathSolver.obj
 	@echo ... src/core/PathSolver.i
 	@echo ... src/core/PathSolver.s

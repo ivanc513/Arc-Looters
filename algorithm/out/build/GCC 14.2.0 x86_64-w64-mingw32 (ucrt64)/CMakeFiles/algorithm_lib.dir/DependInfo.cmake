@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Graph.cpp" "CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj" "gcc" "CMakeFiles/algorithm_lib.dir/src/core/Graph.cpp.obj.d"
+  "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Path.cpp" "CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj" "gcc" "CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj.d"
   "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/PathSolver.cpp" "CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj" "gcc" "CMakeFiles/algorithm_lib.dir/src/core/PathSolver.cpp.obj.d"
   "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Point.cpp" "CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj" "gcc" "CMakeFiles/algorithm_lib.dir/src/core/Point.cpp.obj.d"
   "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/steps/EllipseInit.cpp" "CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj" "gcc" "CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj.d"

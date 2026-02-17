@@ -7,15 +7,20 @@
 class Graph {
 private:
     int n;
+    std::vector<int> scores;
     std::vector<std::vector<double>> adjMatrix;
 public:
-    Graph(const std::vector<Point>& nodes);
+    Graph(const std::vector<Point>& nodes, const std::vector<int>& values);
 
     void remove_edge(int a, int b);
 
-    bool has_edge(int a, int b);
+    bool has_edge(int a, int b) const;
+    
+    int get_edge(int a, int b) const;
 
-    int size();
+    int get_score(int a) const;
 
-    void display();
+    int size() const;
+
+    void display() const;
 };

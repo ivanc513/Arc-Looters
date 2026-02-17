@@ -1,8 +1,12 @@
+#pragma once
 #include "Path.h"
 #include "Point.h"
+#include "Graph.h"
+
+# define MAX_ITERATIONS 10
 
 namespace Solver {
-    Path solution(Path& l);
+    Path solution(Path& l, const Graph& graph, double Tmax, int lth);
 
-    void insert_points(Path&l, Point a, Point b);
+    std::vector<Path> paths_init(const Graph& graph, double Tmax);
 }

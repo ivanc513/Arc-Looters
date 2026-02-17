@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_all.dir/test_ellipse.cpp.obj"
   "CMakeFiles/test_all.dir/test_ellipse.cpp.obj.d"
+  "CMakeFiles/test_all.dir/test_path.cpp.obj"
+  "CMakeFiles/test_all.dir/test_path.cpp.obj.d"
   "CMakeFiles/test_all.dir/test_point.cpp.obj"
   "CMakeFiles/test_all.dir/test_point.cpp.obj.d"
   "libtest_all.dll.a"

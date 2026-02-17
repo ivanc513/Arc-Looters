@@ -19,6 +19,12 @@
 },
 {
   "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm_lib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm_lib.dir\\src\\core\\Path.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\src\\core\\Path.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/Path.cpp",
+  "output": "CMakeFiles/algorithm_lib.dir/src/core/Path.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/algorithm_lib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\algorithm_lib.dir\\src\\core\\steps\\EllipseInit.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\src\\core\\steps\\EllipseInit.cpp",
   "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/src/core/steps/EllipseInit.cpp",
   "output": "CMakeFiles/algorithm_lib.dir/src/core/steps/EllipseInit.cpp.obj"
@@ -40,6 +46,12 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_all.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_all.dir\\test_ellipse.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\tests\\test_ellipse.cpp",
   "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/tests/test_ellipse.cpp",
   "output": "tests/CMakeFiles/test_all.dir/test_ellipse.cpp.obj"
+},
+{
+  "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/tests",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_all.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\test_all.dir\\test_path.cpp.obj -c C:\\Users\\Ivan\\Arc_Looters_Project\\Arc-Looters\\algorithm\\tests\\test_path.cpp",
+  "file": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/tests/test_path.cpp",
+  "output": "tests/CMakeFiles/test_all.dir/test_path.cpp.obj"
 },
 {
   "directory": "C:/Users/Ivan/Arc_Looters_Project/Arc-Looters/algorithm/out/build/GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)/_deps/googletest-build/googlemock",
